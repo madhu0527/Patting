@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#F5F5F5"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/detailLay"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_alignTop="@+id/petimageView"
+            android:layout_toRightOf="@+id/petimageView">
+
+            <TextView
+                android:id="@+id/petCate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:text="German Shepherd"
+                android:textColor="#959BA3"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/favImg"
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp" />
+
+            <TextView
+                android:id="@+id/pet_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/petCate"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/title"
+                android:textColor="#202830"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/priceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pet_title"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Rs.8000"
+                android:textColor="#AEEA00"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="right|bottom"
+                android:padding="5dp"
+                android:text="Dec 20th in Bangalore"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/petimageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/no_media" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

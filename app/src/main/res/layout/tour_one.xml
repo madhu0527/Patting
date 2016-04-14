@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/man"
+            android:layout_width="150dp"
+            android:layout_height="156dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/man" />
+
+        <ImageView
+            android:id="@+id/dog"
+            android:layout_width="60dp"
+            android:layout_height="76dp"
+            android:layout_alignBottom="@+id/man"
+            android:layout_alignRight="@+id/man"
+            android:layout_marginBottom="5dp"
+            android:gravity="right"
+            android:src="@drawable/sad" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dog"
+            android:layout_toRightOf="@+id/man"
+            android:src="@drawable/cloudd" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/last" />
+
+        <TextView
+            android:id="@+id/patingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView1"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Patting is the solution"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</LinearLayout>

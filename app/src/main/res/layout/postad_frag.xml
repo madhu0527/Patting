@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollPost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/addPhotos"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@drawable/circle">
+
+                <TextView
+                    android:id="@+id/tapToadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/add_photos"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/selectedMedia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/petsTypeSpnr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#0000FF"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/spinner_base_color"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="#0000FF"
+                app:ms_floatingLabelText="@string/post_pet_type"
+                app:ms_hint="@string/post_pet_type"
+                app:ms_multiline="false" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/cateSpnr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#0000FF"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/spinner_base_color"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="#0000FF"
+                app:ms_floatingLabelText="@string/post_pet_cate"
+                app:ms_hint="@string/post_pet_cate"
+                app:ms_multiline="false" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/nameEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Pet Name or Title"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/shortDesEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Short Description"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/brfDescEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Brief Description(optional)"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/editCost"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Price"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:phoneNumber="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/breedSpnr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#0000FF"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/spinner_base_color"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="#0000FF"
+                app:ms_floatingLabelText="@string/post_pet_breed"
+                app:ms_hint="@string/post_pet_breed"
+                app:ms_multiline="false" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/sizeSpnr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#0000FF"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/spinner_base_color"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="#0000FF"
+                app:ms_floatingLabelText="@string/post_pet_size"
+                app:ms_hint="@string/post_pet_size"
+                app:ms_multiline="false" />
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/genderSpnr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#0000FF"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/spinner_base_color"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="#0000FF"
+                app:ms_floatingLabelText="@string/post_pet_gender"
+                app:ms_hint="@string/post_pet_gender"
+                app:ms_multiline="false" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/ageSpnr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#0000FF"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/spinner_base_color"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="#0000FF"
+                app:ms_floatingLabelText="@string/post_pet_age"
+                app:ms_hint="@string/post_pet_age"
+                app:ms_multiline="false" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/stateSpnr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#0000FF"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/spinner_base_color"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="#0000FF"
+                app:ms_floatingLabelText="@string/select_state"
+                app:ms_hint="@string/select_state"
+                app:ms_multiline="false" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/citySpnr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="#0000FF"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/spinner_base_color"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelColor="#0000FF"
+                app:ms_floatingLabelText="@string/select_city"
+                app:ms_hint="@string/select_city"
+                app:ms_multiline="false" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <EditText
+                    android:id="@+id/locationEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="Location(optional)"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <mobile.patting.Design.MaterialProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:mpb_progressStyle="horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

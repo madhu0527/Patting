@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/manImag"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/homepage" />
+    <TextView
+        android:id="@+id/jhonTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/manImag"
+        android:padding="10dp"
+        android:text="    John opens the patting app on his smartphone."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/tour_black_color" />
+    <TextView
+        android:id="@+id/clickTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jhonTxt"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/manImag"
+        android:padding="10dp"
+        android:text="    Click on Post free ad and start filling out the relevant details about the dog for adoption."
+        android:textColor="@color/tour_black_color"/>
+    <ImageView
+        android:id="@+id/girlImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/manImag"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="35dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/gill" />
+    <TextView
+        android:id="@+id/sarahTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/girlImg"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/manImag"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/girlImg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Sarah who also has patting app and wants to adopt a dog  find out about John post under adoption category in the home page of app.  "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/tour_black_color" />
+    <ImageView
+        android:id="@+id/petImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sarahTxt"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/dogg" />
+    <TextView
+        android:id="@+id/maxTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/petImg"
+        android:layout_below="@+id/sarahTxt"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/petImg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Max is now happy with his new owner."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/tour_black_color" />
+    <TextView
+        android:id="@+id/stopWaggingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/girlImg"
+        android:layout_below="@+id/maxTxt"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/petImg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="		Stop wagging your tail max. "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff0000" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="spinner_base_color">#44000000</color>
+    <color name="white">#fff</color>
+    <color name="text_color">#212121</color>
+    <color name="post_free_ad_txt_color">#FF3D00</color>
+    <color name="accent_black">#484949</color>
+    <color name="dark_grey">#656565</color>
+    <color name="color_canvera_selected">#70c1b3</color>
+    <color name="tour_black_color">#212121</color>
+    <color name="rippelColor">#FFAB91</color>
+    <color name="home_grid1">#6EB7BE</color>
+    <color name="home_grid2">#ACDCDC</color>
+    <color name="home_grid3">#FEBE52</color>
+    <color name="home_grid4">#58838A</color>
+    <color name="home_grid5">#CDDC39</color>
+    <color name="home_grid6">#FF5722</color>ACDCDC
+    <color name="home_grid7">#9CCC65</color>
+</resources>
